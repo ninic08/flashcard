@@ -1,0 +1,54 @@
+body{
+    background-color: powderblue;
+
+}
+#conteiner{
+    display: flex;
+}
+.cartão{
+    margin: 50px;
+    background-color: blueviolet;
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33% -6rem);
+    width: 25rem;
+}
+
+.conteúdo::after{
+text-align: center;
+transform-style: preserve-3d;
+transition: transform 300ms;
+}
+
+h3{
+    margin: 10px;
+    border-radius: 0,6rem;
+    background-color: tomato;
+}
+.resposta{
+font-size: 40px;
+font-weight: 700;
+transform: rotateY (180deg)
+}
+.pergunta
+.resposta{
+backface-visibility: hidden;
+position: absolute;
+height: 100%;
+}
+
+.cartão:hover .conteúdo{
+transform: rotateY(180deg);
+transition: transform
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    bottom: 0;
+    width:100%;
+    position: fixed;
+    text-align: center;
+}
